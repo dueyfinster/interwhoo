@@ -1,0 +1,15 @@
+# EditorConfig file - http://editorconfig.org/
+root = true
+
+[*]
+charset = utf-8
+end_of_line = LF
+insert_final_newline = true
+
+[*.{java,xml}]
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.java]
+max_line_length = 200
