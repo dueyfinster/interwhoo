@@ -4,6 +4,8 @@ RemoteSystemsTempFiles
 bin/
 tmp/
 target/
+.DS_Store
+.project
 *.tmp
 *.bak
 *.swp
