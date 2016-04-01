@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.ngrogan</groupId>
   <artifactId>interwhoo</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.9-SNAPSHOT</version>
   <name>Interwhoo</name>
   <description>Interview excercise from Intercom Dublin</description>
   <ciManagement>

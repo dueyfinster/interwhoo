@@ -24,20 +24,12 @@ public class Customer {
     public String getName() {
         return name;
     }
-
-    public double getLatitude() {
-        return latitude;
-    }
-
-    public double getLongitude() {
-        return longitude;
-    }
     
     public GeoPoint getGeoPoint() {
         return new GeoPoint(latitude, longitude);
     }
 
     public String toString(){
-        return "[user_id:"+userId+", name:"+name+", latitude:"+latitude+", longitude:"+longitude+"]";
+        return "[user_id:"+userId+", name:"+name+"]";
     }
 }

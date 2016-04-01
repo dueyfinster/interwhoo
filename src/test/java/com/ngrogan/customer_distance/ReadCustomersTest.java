@@ -1,6 +1,7 @@
 package com.ngrogan.customer_distance;
 
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
@@ -19,9 +20,10 @@ public class ReadCustomersTest {
         rc = new ReadCustomers();
     }
     
-    @Test(expected=NullPointerException.class)
-    public void wrongfilePathThrowsError(){
+    @Test
+    public void wrongFileMeansEmptyCustList(){
         List<Customer> customers = rc.readJSONFileToCustomers(INVALID_FILE_PATH);
+        assertTrue(customers.isEmpty());
     }
     
     @Test

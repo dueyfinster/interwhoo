@@ -38,7 +38,7 @@ public class CustomerTest {
     
     @Test
     public void getToString(){
-        final String expectedResult = "[user_id:1, name:Neil Grogan, latitude:-57.102029, longitude:33.0022323]";
+        final String expectedResult = "[user_id:1, name:Neil Grogan]";
         final String actualResult = customer.toString();
         assertTrue(expectedResult.equals(actualResult));
     }
