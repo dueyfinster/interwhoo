@@ -6,6 +6,8 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.ngrogan.customer_distance.model.Customer;
+
 public class CustomerTest {
     private Customer customer;
     
@@ -26,12 +28,18 @@ public class CustomerTest {
     
     @Test
     public void getCustomerLatitude(){
-        assertTrue(customer.getLatitude() == -57.1020290);
+        assertTrue(customer.getGeoPoint().getLatitude() == -57.1020290);
     }
     
     @Test
     public void getCustomerLongitude(){
-        assertTrue(customer.getLongitude() == 33.0022323);
+        assertTrue(customer.getGeoPoint().getLongitude() == 33.0022323);
     }
     
+    @Test
+    public void getToString(){
+        final String expectedResult = "[user_id:1, name:Neil Grogan, latitude:-57.102029, longitude:33.0022323]";
+        final String actualResult = customer.toString();
+        assertTrue(expectedResult.equals(actualResult));
+    }
 }

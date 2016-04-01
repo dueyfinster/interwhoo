@@ -1,6 +1,9 @@
-package com.ngrogan.customer_distance;
+package com.ngrogan.customer_distance.model;
+
+import com.google.gson.annotations.SerializedName;
 
 public class Customer {
+    @SerializedName("user_id")
     private int userId;
     private String name;
     private double latitude;
@@ -29,6 +32,12 @@ public class Customer {
     public double getLongitude() {
         return longitude;
     }
-
     
+    public GeoPoint getGeoPoint() {
+        return new GeoPoint(latitude, longitude);
+    }
+
+    public String toString(){
+        return "[user_id:"+userId+", name:"+name+", latitude:"+latitude+", longitude:"+longitude+"]";
+    }
 }
