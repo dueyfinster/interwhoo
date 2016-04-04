@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/ael2iylv4arw5hwt?svg=true)](https://ci.appveyor.com/project/dueyfinster/designpatterns)
+[![Circle CI](https://circleci.com/gh/dueyfinster/interwhoo.svg?style=svg)](https://circleci.com/gh/dueyfinster/interwhoo)
 [![Build Status](https://travis-ci.org/dueyfinster/interwhoo.svg?branch=master)](https://travis-ci.org/dueyfinster/interwhoo)
 
 # Intercom Assessment

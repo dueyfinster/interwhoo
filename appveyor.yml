@@ -1,5 +1,0 @@
-install:
-  - choco install maven
-
-build_script:
-  - mvn clean install
